@@ -1,0 +1,205 @@
+body{
+  background-image:url(/images/kitchen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f8e4c8;
+  font-family: monospace;
+  color: #fff;
+  text-shadow: 5px 0px 10px 10px #ff0000;
+}
+
+h1{
+  font-size: 35px;
+  padding: 0px 0px 0px 25px;
+}
+
+form p{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#rule{
+  display: block;
+  margin: 35px 10px 10px 10px;
+  text-align: justify;
+}
+
+#start{
+  border: 1px solid #fff;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  width: 500px;
+  height: 500px;
+  color: #fff;
+  margin: 75px auto;
+}
+
+#checkbox{
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: 10px 5px 10px 20px;
+  border-radius: 50px;
+}
+
+#start button{
+  background: rgba(255, 255, 255, 0.7);
+  width: 75px;
+  height: 50px;
+  box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.6), inset 0 0 6px  5px rgba(255,255,255,0.6);
+  border-radius: 5px;
+  position: relative;
+  margin: 10px 20px;
+  float: right;
+}
+
+#start button:hover{
+  box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.5), 0 0 5px  3px rgba(255,255,255,0.1);
+}
+
+#hint{
+  background-image:url(/images/hint.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 50px;
+  height: 50px;
+  border: none;
+  position: fixed;
+  margin: -5%;
+}
+
+#hint p{
+  display: block;
+  font-style:italic;
+  font-size: 18px;
+}
+
+#hint:hover{
+  background-image:url(/images/hint_on.png);
+}
+
+.hint_off{
+  background-image:url(/images/hint_off.png);
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 50px;
+  height: 50px;
+  border: none;
+  float: right;
+  position: fixed;
+  margin: 30% 45%;
+  border: none;
+}
+
+#game{
+  border: none;
+}
+
+#game button{
+  padding: 0;
+  border: none;
+  background: none;
+  position:relative;
+  float: right;
+  margin-right: 15%;
+  margin-top: 20%;
+}
+
+#guesses{
+  margin-top: 10px;
+  border: 1px solid #fff;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  display:inline-block;
+  width: 150px;
+  height: 300px;
+  color: #fff;
+}
+
+#checking{
+  border: 1px solid #fff;
+  background: rgba(0,0,0,0.7);
+  border-radius: 8px;
+  display:inline-block;
+  width: 150px;
+  height: 300px;
+  color: #fff;
+}
+
+#console{
+  background-image:url(/images/console.gif);
+  background-size:contain;
+  width: 310px;
+  height: 190px;
+  display: inline-block;
+  position: fixed;
+}
+
+#number{
+  display: inline-block;
+  margin: 26px 0px 0px 205px;
+  width:90px;
+  height: 48px;
+  font-size: 0;
+}
+
+.digit{
+  display: inline-block;
+  width:30px;
+  height: 23px;
+  padding: 0;
+  margin: 0;
+}
+
+#screen{
+  display: inline-block;
+  width: 122px;
+  height: 50px;
+  margin: 50px 0px 0px 43px;
+  padding:6px 0px 0px 8px;
+  position: absolute;
+}
+
+.oneOf{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:20px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+#clearCode{
+  width: 50px;
+  height: 20px;
+  display: inline-block;
+  right: 10px;
+  bottom: 80px;
+  position: absolute;
+}
+
+#secretCode{
+  width:0;
+  height: 0;
+  background-size: 0;
+  visibility: hidden;
+}
+
+#console form{ 
+  display: inline-block;
+  right: 10px;
+  bottom: 50px;
+  position: absolute;
+}
+
+#attempts{
+  display:inline-block;
+  position: absolute;
+  bottom: 52px;
+  left: 150px;
+  color: red;
+}
+
+

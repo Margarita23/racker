@@ -1,0 +1,7 @@
+function getGuessesList(check){
+	check.addEventListener('click',function(){
+		var textElem = document.createTextNode('Тут был я');
+
+
+	});
+}

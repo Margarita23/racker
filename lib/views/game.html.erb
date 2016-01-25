@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB page</title>
+    <link rel="stylesheet" href="/stylesheets/application.css">
+  </head>
+  <body>
+    <div id = "game">
+    <% if hint_cookie!="no hint" %>
+      <form method="post" action="/hint">
+        <button type="submit">
+          <div id="hint">
+            <p><%= hint_cookie %></p>
+          </div>
+        </button>
+      </form>
+    <% else %>
+      <div class = "hint_off"></div>
+    <% end %>
+    </div>
+    <div id = "guesses">
+      <p>Your guesses</p>
+      <ul>
+      <% mas = guess.to_s.split(" ") %>
+      <% mas.each do |el| %>
+        <li><%= el %></li>
+      <% end %>
+      </ul>
+    </div>
+    <div id = "checking">
+      <p>Result of checking</p>
+      <ul>
+      <% arr = result.to_s.split("]")%>
+      <% arr.each do |elem| %>
+        <li><%= elem.to_s.gsub(/,/,'').gsub(/\[/,'').gsub(/\"/,'') %></li>
+      <% end %>
+      </ul>
+    </div>
+    <div id = "console">
+      <form method="post" action="/check_guess">
+        <input name="guess" id = "secretCode" pattern=".{4,}" required title="Minimum 4 characters required">
+        <button type="submit">Check!</button>
+      </form>
+      <div id = "screen">
+        <div class = "oneOf"></div>
+        <div class = "oneOf"></div>
+        <div class = "oneOf"></div>
+        <div class = "oneOf"></div>
+      </div>
+      <div id="attempts"><%= attempts %></div>
+      <div id = "number">
+        <div class="digit">1</div>
+        <div class="digit">2</div>
+        <div class="digit">3</div>
+        <div class="digit">4</div>
+        <div class="digit">5</div>
+        <div class="digit">6</div>
+      </div>
+    </div>
+  </body>
+  <script src="/javascript/script.js"></script>
+</html>

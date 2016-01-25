@@ -1,0 +1,18 @@
+GIT
+  remote: https://github.com/Margarita23/codebreaker.git
+  revision: 1ee929e938466ec7fcf2c861b64d0446837d8b7e
+  specs:
+    codebreaker (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  codebreaker!
+
+BUNDLED WITH
+   1.10.6

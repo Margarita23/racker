@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEB page</title>
+    <% if game.win?%>
+    <link rel="stylesheet" href="/stylesheets/game_win.css">
+    <% else %>
+    <link rel="stylesheet" href="/stylesheets/game_loss.css">
+    <% end %>  
+  </head>
+  <body>
+    <form method="post" action="/restart">
+        <button type="submit">Restart</button>
+    </form>
+    <div id="result">
+    <% if game.win?%>
+      <p>You can eat what you want now!</p>
+    <% else %>
+      <p>We need to leave, his wife is coming! Hurry go.</p>
+      <p>Secret code was <%= secret %></p>
+    <% end %>  
+    </div>
+  </body>
+</html>
